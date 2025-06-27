@@ -6,8 +6,8 @@ import os
 
 # ========= 配置 Telegram 推送（可选） =========
 ENABLE_TELEGRAM = False  # 设置为 True 启用推送
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
-CHAT_ID = os.environ.get("CHAT_ID")
+BOT_TOKEN = os.environ.get("8149475252:AAEkYJRGJSQje6w1i57gjPOFhXRiZ2Ghf-0")
+CHAT_ID = os.environ.get("5264947511")
 
 
 def send_telegram_message(message):
