@@ -2,11 +2,12 @@ import yfinance as yf
 import pandas as pd
 import datetime
 import requests
+import os
 
 # ========= 配置 Telegram 推送（可选） =========
 ENABLE_TELEGRAM = False  # 设置为 True 启用推送
-BOT_TOKEN = "8149475252:AAEkYJRGJSQje6w1i57gjPOFhXRiZ2Ghf-0"
-CHAT_ID = "BTCYing_bot"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+CHAT_ID = os.environ.get("CHAT_ID")
 
 
 def send_telegram_message(message):
